@@ -1,3 +1,8 @@
+/*
+En responsive el menu "quienes somos" no se cierra al activarlo (es por que es #?)
+En responsive desaparecen los logos del footer
+*/
+
 * {
   margin: 0;
   padding: 0;
