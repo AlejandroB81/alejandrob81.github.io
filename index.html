@@ -21,31 +21,36 @@
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <label class="logo"> Gourmet & Cocktail</label>
-        <ul>
-            <li><a class="active" href="#quienessomos">Quienes Somos</a></li>
-            <li><a class="active" href="cocktail.html">Cocktail</a></li>
-            <li><a class="active" href="food.html">Food</a></li>
-            <li><a class="active" href="contactanos.html">Contactanos</a></li>
-        </ul>
-    </nav>
-    <br><br>
-
+    <header class="pegajoso">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="logo">Gourmet & Cocktail</label>
+            <ul>
+                <li><a class="active" href="#quienessomos">Quienes Somos</a></li>
+                <li><a class="active" href="cocktail.html">Cocktail</a></li>
+                <li><a class="active" href="food.html">Food</a></li>
+                <li><a class="active" href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <div>
+            <h1 class="lines-effect">Servicio de Catering </h1>
+            <br>
+            <h2>Todo lo que siempre quisiste para que tu evento sea unico</h2>
+        </div>
+
         <div class="slide">
             <div class="slide-inner">
                 <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
                     checked="checked">
                 <div class="slide-item">
                     <figure>
-                        <img
-                            src="fotos inicio/eventos sociales inicio.jpg">
-                        <div class="capa">
+                        <img src="fotos inicio/eventos sociales inicio.jpg">
+                        <div class="capaslide">
                             <p class="main-textoslide">Eventos Sociales</p>
                         </div>
                     </figure>
@@ -54,7 +59,7 @@
                 <div class="slide-item">
                     <figure>
                         <img src="fotos inicio/casamiento inicio.jpg">
-                        <div class="capa">
+                        <div class="capaslide">
                             <p class="main-textoslide">Casamientos</p>
                         </div>
                     </figure>
@@ -62,9 +67,8 @@
                 <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
                 <div class="slide-item">
                     <figure>
-                        <img
-                            src="fotos inicio/ejecutivo inicio.jpg">
-                        <div class="capa">
+                        <img src="fotos inicio/ejecutivo inicio.jpg">
+                        <div class="capaslide">
                             <p class="main-textoslide">Catering Ejecutivo</p>
                         </div>
                     </figure>
@@ -72,9 +76,8 @@
                 <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
                 <div class="slide-item">
                     <figure>
-                        <img
-                            src="fotos inicio/coffee inicio.jpg">
-                        <div class="capa">
+                        <img src="fotos inicio/coffee inicio.jpg">
+                        <div class="capaslide">
                             <p class="main-textoslide">Coffee Break</p>
                         </div>
                     </figure>
@@ -103,54 +106,26 @@
                 </ol>
             </div>
         </div>
-
-        <div>
-            <section>
-                <article class="main-titulo"><a name="quienessomos">Quienes somos</article></a>
-                <article>
-                    <p class="main-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam
-                        tempora id velit
-                        accusantium
-                        eveniet
-                        qui deserunt voluptatum quis culpa maxime ea quos voluptate consequuntur rem, a saepe quia
-                        corrupti
-                        illo
-                        labore ex illum assumenda. Aperiam sint dolore aliquid voluptas beatae. Doloribus veritatis,
-                        veniam
-                        voluptates tempora officiis suscipit unde aliquid!</p>
-                </article>
-            </section>
-            <section>
-                <article class="main-titulo">Quienes confiaron en nosotros</article>
-                <article>
-                    <p class="main-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-                        nesciunt architecto
-                        praesentium
-                        facere
-                        veritatis necessitatibus labore nostrum corrupti, maiores odio fugiat nam ab voluptates
-                        accusamus
-                        dolorem
-                        similique saepe. Illum vitae quia iste deserunt magni nemo veniam voluptatibus fugit. Animi
-                        delectus
-                        nobis,
-                        suscipit eius illum ducimus minima iusto nostrum officiis reprehenderit.</p>
-                </article>
-            </section>
-            <section>
-                <article class="main-titulo">Como trabajamos</article>
-                <article>
-                    <p class="main-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem iste incidunt
-                        asperiores facilis
-                        nobis
-                        in
-                        et
-                        expedita non quis repudiandae ex hic, illum, obcaecati ullam quam neque, ad sint necessitatibus
-                        eveniet
-                        distinctio sequi rerum! Aperiam soluta, vero commodi, tempora doloribus fugit necessitatibus
-                        perferendis
-                        libero iusto autem labore debitis, officiis id!</p>
-                </article>
-            </section>
+        <div class="nota">
+            <div class="contenido">
+                <h3><a name="quienessomos">Quienes Somos</a></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta commodi laborum, autem nesciunt
+                    explicabo harum.</p>
+            </div>
+        </div>
+        <div class="nota">
+            <div class="contenido">
+                <h3>Quienes confiaron en nosotros</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta commodi laborum, autem nesciunt
+                    explicabo harum.</p>
+            </div>
+        </div>
+        <div class="nota">
+            <div class="contenido">
+                <h3>Como trabajamos</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta commodi laborum, autem nesciunt
+                    explicabo harum.</p>
+            </div>
         </div>
     </main>
 
