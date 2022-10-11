@@ -17,20 +17,15 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-family: 'Baloo 2', cursive;
-  text-align: justify;
-  text-align: center;
-  font-size: 3vh;
-  margin: 0 20px;
+h2 { font-family: 'Courgette', cursive;
 }
 
-h3 {
-  font-family: 'DM Serif Display', serif;
+nav, h3, h4, p {
+  font-family: 'Manrope', sans-serif;
 }
 
-body {
-  background: #d5d5d5;
+body { 
+  background: #fbfbfb;
 }
 
 main {
@@ -47,15 +42,14 @@ main {
 
 nav {
   position: relative;
-  font-family: 'Baloo 2', cursive;
-  background: #96858f;
+  background: #6d7993;
   height: 100px;
   width: 100%;
   z-index: 1000;
 }
 
 .logo {
-  color: #d5d5d5;
+  color: whitesmoke;
   font-size: 2rem;
   line-height: 5rem;
   margin-left: 1vw;
@@ -75,21 +69,23 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #d5d5d5;
+  color: whitesmoke;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 5px;
   text-transform: uppercase;
-}
+  }
 
 .active:hover {
-  background: rgb(119, 107, 107);
-  transition: .5s;
+  color: black;
+  background-color: #d5d5d5;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 .checkbtn {
   font-size: 30px;
-  color: #d5d5d5;
+  color: whitesmoke;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -121,7 +117,7 @@ nav ul li a {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #6f686c;
+    background: #6d7993;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -141,7 +137,7 @@ nav ul li a {
   a:hover,
   a .active {
     background: none;
-    color: #835f74
+    color: #6d7993
   }
 
   #check:checked~ul {
@@ -154,11 +150,12 @@ nav ul li a {
 
 /* CSS Footer */
 
-footer {
-  background: rgb(124, 119, 119);
+
+footer { 
+  background: rgb(123, 124, 125);
   height: auto;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 30px;
   color: aliceblue;
 }
 
@@ -190,30 +187,30 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 1rem 0 3rem 0;
-}
+  }
 
-.socials li {
-  margin: 0 10px;
-}
+  .socials li {
+    margin: 0 10px;
+  }
 
-.socials a {
-  text-decoration: none;
-  color: white;
-}
+  .socials a {
+    text-decoration: none;
+    color: white;
+  }
 
-.socials a i {
-  font-size: 1.6rem;
-}
+  .socials a i {
+    font-size: 1.8rem;
+  }
 
-.socials a:hover i {
-  color: brown;
-}
+  .socials a:hover i {
+    color: black;
+  }
 
-.footer-bottom {
-  background: rgb(106, 104, 104);
-  padding: 20px 0;
-  text-align: center;
-}
+  .footer-bottom {
+    background: rgb(76, 75, 75);
+    padding: 20px 0;
+    text-align: center;
+  }
 
 .footer-bottom p {
   font-size: 14px;
@@ -597,12 +594,17 @@ article .main-parrafo {
 /* CSS cocktail*/
 
 /* CSS Food */
-
 .lines-effect {
-  font-size: 4vh;
+  font-size: 5.3vmin;
   color: #515b6f;
-  position: relative;
   text-align: center;
+}
+
+.parrafo-food p {
+text-align: center;
+font-size: 22px;
+font-stretch: semi-condensed;
+color: black;
 }
 
 .contenedor-servicios {
@@ -614,54 +616,56 @@ article .main-parrafo {
   row-gap: .5rem;
   justify-content: center;
   align-content: center;
-}
-
+ }
+ 
 .carta {
-  width: 100%;
+  width: 93%;
   margin: 20px;
   border-radius: 6px;
   overflow: hidden;
-  background: rgb(245, 244, 241);
+  background: #e8e2e2;
   cursor: default;
   transition: all 400ms ease;
-}
+  }
 
 .carta:hover {
   transform: translateY(-6%);
 }
 
-.carta img {
+.carta img { 
   max-width: 100%;
   height: auto;
 }
 
-.carta .contenido {
+.carta .contenido { 
   padding: 15px;
   text-align: center;
 }
 
-.carta .contenido p {
+.carta .contenido p { 
   line-height: 1.5;
   color: black;
 }
 
-.carta .contenido>h3 {
+.carta .contenido > h3 {
   font-weight: 500;
   margin-bottom: 10px;
-  background-color: rgb(209, 189, 145);
+  background-color: #a6c6e7a8 ;
+  color: white;
+  font-size: 25px;
 }
 
-@media screen and (max-width:700px) {
-  .contenedor-servicios {
+@media screen and (max-width:767px) { 
+  .contenedor-servicios { 
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .contenedor-servicios {
     grid-template-columns: repeat(2, 1fr)
   }
-}
+} 
 
 @media screen and (min-width: 1024px) {
   .contenedor-servicios {
@@ -674,31 +678,37 @@ article .main-parrafo {
 }
 
 .imagen-food img {
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
-  transition: all .5S ease;
+  transition: all 500mS ease;
+}
+
+.imagen-food h3 {
+  text-align: center;
 }
 
 .galeria-food {
-  width: 100%;
+  width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: .5rem;
-  row-gap: .5rem;
+  column-gap: .6rem;
+  row-gap: .6rem;
 }
 
 .imagen-food {
   position: relative;
   overflow: hidden;
+  transition: all 500mS ease;
+
 }
 
 .imagen-food:hover {
   transform: translateY(-3%)
 }
 
-@media screen and (max-width:765px) {
-  .galeria-food {
+@media screen and (max-width:765px) { 
+  .galeria-food { 
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -707,7 +717,7 @@ article .main-parrafo {
   .galeria-food {
     grid-template-columns: repeat(2, 1fr)
   }
-}
+} 
 
 @media screen and (min-width: 1024px) {
   .galeria-food {
