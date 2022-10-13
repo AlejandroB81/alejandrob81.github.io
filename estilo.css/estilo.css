@@ -270,7 +270,7 @@ footer {
   margin: 2vmin;
   background-color: #e8e2e2;
   border-radius: 6px;
-  max-width: 1000px;
+  min-width: 480px;
   padding: 30px;
   box-sizing: border-box;
   box-shadow: 5px 5px 5px #a6c6e7a8;
