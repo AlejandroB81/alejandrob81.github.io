@@ -156,6 +156,7 @@ footer {
   background: rgb(123, 124, 125);
   height: auto;
   width: 100%;
+  margin-top: 50px;
   padding-top: 30px;
   color: aliceblue;
 }
@@ -862,6 +863,7 @@ footer {
 .formulario {
   width: 100%;
   max-width: 1100px;
+  margin-top: 50px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
